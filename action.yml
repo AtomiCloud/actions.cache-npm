@@ -1,0 +1,31 @@
+name: Cache NPM Packages
+description: "Cache NPM Packages compatible with Namespace Lab's runners"
+inputs:
+  namespacelabs:
+    default: "true"
+    description: "Using Namespace Lab's runners"
+branding:
+  color: blue
+  icon: archive
+runs:
+  using: "composite"
+  steps:
+    # NAMESPACE LAB VERSION
+    - uses: namespacelabs/nscloud-cache-action@v1
+      with:
+        path: |
+          ~/.npm
+          ./node_modules
+      if: inputs.namespacelabs == 'true'
+
+    # NATIVE VERSION
+    - uses: actions/cache@v3
+      id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
+      with:
+        path: |
+          ~/.npm
+          ./node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+      if: inputs.namespacelabs == 'false'
