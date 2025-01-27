@@ -2,13 +2,13 @@ name: Cache NPM Packages
 description: "Cache NPM Packages compatible with Namespace Lab's runners"
 inputs:
   namespacelabs:
-    default: "true"
+    default: 'true'
     description: "Using Namespace Lab's runners"
 branding:
   color: blue
   icon: archive
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     # NAMESPACE LAB VERSION
     - uses: namespacelabs/nscloud-cache-action@v1
