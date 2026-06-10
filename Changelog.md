@@ -1,3 +1,11 @@
+## [2.0.0](https://github.com/AtomiCloud/actions.cache-npm/compare/v1.1.0...v2.0.0) (2026-06-10)
+
+
+### ✨ Features ✨
+
+* **breaking:** release new major for upgraded sub-actions ([bbb2716](https://github.com/AtomiCloud/actions.cache-npm/commit/bbb27167bc58cdc5a526d537e93c4007c7d5f088))
+* upgrade sub-actions to latest versions ([2048afd](https://github.com/AtomiCloud/actions.cache-npm/commit/2048afd9d2bbbae78bd44018835222289c8c9ddc))
+
 ## [1.1.0](https://github.com/AtomiCloud/actions.cache-npm/compare/v1.0.1...v1.1.0) (2025-01-27)
 
 
