@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/AtomiCloud/actions.cache-npm/compare/v2.0.0...v2.0.1) (2026-07-11)
+
+
+### 🐛 Bug Fixes 🐛
+
+* bump setup-nix to v3 ([e4c265b](https://github.com/AtomiCloud/actions.cache-npm/commit/e4c265bea7a9851fca73faaa586dad5dbb944f04))
+
 ## [2.0.0](https://github.com/AtomiCloud/actions.cache-npm/compare/v1.1.0...v2.0.0) (2026-06-10)
 
 
